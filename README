@@ -4,6 +4,10 @@ README:  Tcl
     You can get any source release of Tcl from the file distributions
     link at the above URL.
 
+    The modified udp source code belongs to:
+	https://github.com/mpcjanssen/tcludp
+
+	Thanks for sharing that!
 Contents
 --------
     1. Introduction
