@@ -1,0 +1,18 @@
+
+2016-07-29: Manuel Garcia <mgarc729@fiu.edu>
+
+	* /generic/udp_tcl.h: Added field "char localaddr" to struct UdpState
+	* /generic/udp_tcl.c: Implementation of ip binding to specifi port	
+		 * line  286: Added variable: int result
+		 		Keeps track of ip initialization results
+		 * line  287: Added variable: char localaddr  
+		 		Save the local ip 
+		 * line  297: Modified variable: "errmsg" now shows [localaddr] as an option
+		 * line  313: Parsing input to accept the local address
+		 * line  373: Added implementation for ipv6 of the specific ip binding
+		 * line  389: Added implementation for ipv4 of the specific ip binding
+		 * line  438: Added: Saving the local address value into the struct UdpState
+		 * line 1479: Added implementation to retrieve the value of the local address using
+		 	      the "fconfigure" command.
+			      	usage: fconfigure $sock -localaddr
+				returns: local ip and port -> "xxx.xxx.xxx.xxx pppp"
