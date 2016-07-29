@@ -16,3 +16,12 @@
 		 	      the "fconfigure" command.
 			      	usage: fconfigure $sock -localaddr
 				returns: local ip and port -> "xxx.xxx.xxx.xxx pppp"
+	* /generic/tclBasic.c: Added entries to the newly integrated UDP functions
+		*  lines  192: Added udp_open, udp_conf, udp_peek entries
+	* /generic/tclInt.h: Added EXTERN calls to the udp functins
+		* line 2294: Added the udp_open, udp_conf, udp_peef extern calls
+	* /unix/Makefile.in: Added the udp files to the compilation process
+		* line 	327: Added udp_tcl.o
+		* line  420: Added udp_tcl.c path to the list of all files' paths
+		* line 1080: Added tcl_upd necessary flags to the compilation process.:w
+		
